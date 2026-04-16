@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Sugestão de Cursos - INTRAIVE</title>
+</head>
+<body>
+
+<header class="header d-none d-lg-flex">
+    <a href="index.html"><h1>INTRAIVE</h1></a>
+    <nav class="menu d-none d-lg-flex">
+        <ul>
+            <li>
+                <a href="cursos.html" target="_blank">
+                    <img src="img/cursos-removebg-preview.png" alt="Cursos procurados">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.sp.senai.br/unidade/manutencao/" target="_blank">
+                    <img src="img/Logo do SENAI em destaque.png" alt="SENAI">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-intraive">
+    <div class="container-fluid">
+        <a class="navbar-brand d-lg-none" href="index.html">INTRAIVE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="https://www.sp.senai.br/unidade/manutencao/" target="_blank">Senai</a></li>
+                <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Retornar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="form-section">
+        <h2>Escolha ou Sugira um Curso</h2>
+        <p class="form-desc">Selecione um dos cursos disponíveis ou envie uma sugestão. Sua opinião é muito importante para nós!</p>
+
+        <form class="form-cursos" action="#" method="post">
+
+            <!-- Dados pessoais -->
+            <fieldset>
+                <legend>Seus Dados</legend>
+
+                <div class="form-group">
+                    <label for="nome">Nome completo <span>*</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+                </div>
+            </fieldset>
+
+            <!-- Escolha de curso -->
+            <fieldset>
+                <legend>Escolha um Curso</legend>
+
+                <div class="form-group">
+                    <label for="curso">Curso de interesse <span>*</span></label>
+                    <select id="curso" name="curso" required>
+                        <option value="" disabled selected>Selecione um curso...</option>
+                        <option value="bdc">Banco de Dados e Cloud (BDC)</option>
+                        <option value="ccna">Redes de Computadores (CCNA)</option>
+                        <option value="ciber">Cibersegurança</option>
+                        <option value="frontend">Desenvolvimento Front-End</option>
+                        <option value="outro">Outro (preencha abaixo)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nível desejado</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="nivel" value="iniciante"> Iniciante
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="nivel" value="intermediario"> Intermediário
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="nivel" value="avancado"> Avançado
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Modalidade preferida</label>
+                    <div class="checkbox-group">
+                        <label class="check-label">
+                            <input type="checkbox" name="modalidade" value="presencial"> Presencial
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="modalidade" value="online"> Online
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="modalidade" value="hibrido"> Híbrido
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Período preferido</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="periodo" value="matutino"> Matutino
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="periodo" value="vespertino"> Vespertino
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="periodo" value="noturno"> Noturno
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="periodo" value="integral"> Integral
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Sugestão -->
+            <fieldset>
+                <legend>Sua Sugestão</legend>
+
+                <div class="form-group">
+                    <label for="sugestao">Sugira um curso ou deixe um comentário</label>
+                    <textarea id="sugestao" name="sugestao" rows="5" placeholder="Ex: Gostaria de um curso de Inteligência Artificial voltado para iniciantes..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="prioridade">Como você avalia a urgência desse curso?</label>
+                    <input type="range" id="prioridade" name="prioridade" min="1" max="5" value="3">
+                    <div class="range-labels">
+                        <span>Baixa</span>
+                        <span>Média</span>
+                        <span>Alta</span>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="reset" class="btn-reset">Limpar</button>
+                <button type="submit" class="btn-submit">Enviar Sugestão</button>
+            </div>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <nav class="redes">
+        <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="img/Redes Sociais/face.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fsenai.sp%2F&source=omni_redirect" target="_blank"><img src="img/Redes Sociais/instagram.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/channel/UCaz1BMUVug86pd_uS598X1A" target="_blank"><img src="img/Redes Sociais/youtube.png" alt="YouTube"></a>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsenaisaopaulo" target="_blank"><img src="img/Redes Sociais/twitter.png" alt="Twitter"></a>
+        <a href="https://br.linkedin.com/school/senaisp/" target="_blank"><img src="img/Redes Sociais/linkedin.png" alt="Linkedin"></a>
+        <a href="https://api.whatsapp.com/send?phone=551133220050" target="_blank"><img src="img/Redes Sociais/whatsapp.png" alt="WhatsApp"></a>
+    </nav>
+
+    <section class="contato">
+        <p>
+            <span class="titulo">SENAI Tatuapé - "Frederico Jacob"</span><br>
+            rua São Jorge, 634 - Tatuapé - São Paulo/SP | CEP 03087-000
+        </p>
+        <p>
+            <span class="titulos">CENTRAL DE RELACIONAMENTO:</span><br>
+            (11) 2227-8020 (Telefone/WhatsApp)<br>
+            senaimanutencao@sp.senai.br
+        </p>
+    </section>
+
+    <section class="direitos">
+        <p>Copyright 2025 © Todos os direitos reservados.</p>
+        <p>Web-design · Front-end</p>
+        <h2>INTRAIVE ™</h2>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* ========================
+   BANNER DE SEDES
+======================== */
+
+.header-logo {
+  height: 60px;
+  width: auto;
+  margin-right: -1100px;
+}
+
+.sedes-banner {
+  background: linear-gradient(135deg, #003580, #0050c8);
+  color: #FFD700;
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  border: 3px solid #FFD700;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.sedes-banner h2 {
+  font-size: 36px;
+  color: #FFD700;
+  margin-bottom: 12px;
+}
+
+.sedes-banner p {
+  font-size: 17px;
+  color: #dce8ff;
+}
+
+/* ========================
+   BLOCO DE SEÇÃO
+======================== */
+.sedes-bloco {
+  margin-bottom: 45px;
+}
+
+.sedes-titulo {
+  font-size: 24px;
+  color: #003580;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #FFD700;
+}
+
+/* ========================
+   GRID DE CIDADES (PAÍSES)
+======================== */
+.paises-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.pais-card {
+  background-color: #f8f9ff;
+  border-left: 6px solid #0050c8;
+  border-radius: 10px;
+  padding: 25px 30px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 340px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pais-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,53,128,0.15);
+}
+
+.pais-card h3 {
+  font-size: 20px;
+  color: #003580;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pais-card h3 img {
+  height: 28px;
+  width: 42px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.pais-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pais-card ul li {
+  padding: 7px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 15px;
+  color: #333;
+}
+
+.pais-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* ========================
+   GRID DE ESTÁDIOS
+======================== */
+.estadios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ========================
+   CARD DE ESTÁDIO
+======================== */
+.estadio-card {
+  background-color: #f8f9ff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.09);
+  border: 2px solid #e0e8ff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.estadio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,53,128,0.18);
+}
+
+.estadio-card.destaque {
+  border-color: #FFD700;
+}
+
+.estadio-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background-color: #d0d8f0;
+}
+
+.estadio-info {
+  padding: 15px 18px;
+  flex: 1;
+  border-top: 3px solid #0050c8;
+}
+
+.estadio-card.destaque .estadio-info {
+  border-top-color: #FFD700;
+}
+
+.estadio-info h3 {
+  font-size: 16px;
+  color: #003580;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.estadio-info p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+/* BADGE */
+.badge {
+  background-color: #FFD700;
+  color: #003580;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+  .estadios-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sedes-banner h2 { font-size: 26px; }
+  .sedes-banner p  { font-size: 15px; }
+  .sedes-titulo    { font-size: 20px; }
+  .paises-grid { flex-direction: column; align-items: center; }
+  .pais-card { width: 100%; max-width: 100%; }
+  .estadios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .header-logo { margin-right: 0 !important; }
+}
+
+@media (max-width: 480px) {
+  .sedes-banner { padding: 25px 15px; }
+  .sedes-banner h2 { font-size: 22px; }
+  .estadios-grid { grid-template-columns: 1fr; }
+  .estadio-card img { height: 200px; }
+  .estadio-info h3 { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+  .sedes-banner h2 { font-size: 18px; }
+  .sedes-titulo { font-size: 17px; }
+}

@@ -1,0 +1,127 @@
+/* ========================
+   GRID DE GRUPOS
+======================== */
+
+.header-logo {
+  height: 60px;
+  width: auto;
+  margin-right: -1100px;
+}
+
+.grupos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+/* ========================
+   CARD DE GRUPO
+======================== */
+.grupo-card {
+  background-color: #f8f9ff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  border: 2px solid #e0e8ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grupo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,53,128,0.15);
+}
+
+.grupo-card.destaque {
+  border-color: #FFD700;
+}
+
+/* CABEÇALHO DO GRUPO */
+.grupo-header {
+  background: linear-gradient(135deg, #003580, #0050c8);
+  color: #FFD700;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding: 12px;
+  letter-spacing: 1px;
+}
+
+.grupo-card.destaque .grupo-header {
+  background: linear-gradient(135deg, #b8860b, #FFD700);
+  color: #003580;
+}
+
+/* LISTA DE SELEÇÕES */
+.grupo-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grupo-card ul li {
+  padding: 11px 18px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #e8eaf6;
+  transition: background-color 0.15s;
+}
+
+.grupo-card ul li:last-child {
+  border-bottom: none;
+}
+
+.grupo-card ul li:hover {
+  background-color: #eef1ff;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+  .grupos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grupos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .header-logo { margin-right: 0 !important; }
+}
+
+@media (max-width: 480px) {
+  .grupos-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .grupo-header {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .grupo-card ul li {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .grupos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header-logo { height: 60px; width: auto; margin-right: -340px; }
+
+.grupo-card ul li img {
+  height: 20px;
+  width: 30px;
+  object-fit: cover;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 6px;
+}

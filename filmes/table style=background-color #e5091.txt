@@ -1,0 +1,25 @@
+<table style="background-color: #e50914;">
+    <tr><!--Celula que acomodará a imagen -->
+        <td><figure>
+            <img src="img/dexter.png" alt="Dexter" style="width: 100 300px;">
+        </figure> </td>
+        <td></td><!--espaço entre elementos (img e txt)-->
+
+        <td><!--celula-->
+            Dexter Morgan é um perito forense especializado em análise de sangue que trabalha para a polícia de Miami. Mas à noite, ele leva uma vida secreta como assassino em série — matando apenas criminosos que escaparam da justiça. A série explora o conflito entre seu “código moral” e sua natureza sombria.
+            <br>    
+            <a href="dexter.html" class="btn">Saiba mais</a>
+        </td>
+            
+    </tr>
+    
+    </table>
+
+    <style>
+        body { background-color: rgb(10, 76, 199); }
+        h1, h2 { color: azure; }
+        h1, h2:nth-of-type(1) { text-align: center; }
+        table { background-color: rgb(10, 76, 199); }
+        img { width: 250px; }
+        a { color: azure; }
+    </style>

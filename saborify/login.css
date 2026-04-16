@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #565658;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #EA1D2C;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.header h1 {
+    font-size: 70px;
+    color: #E5E5E5;
+}
+
+.header a {
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.header a:hover {
+    transform: scale(1.1);
+}
+
+/* MENU */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu img {
+    height: 70px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+}
+
+/* NAVBAR MOBILE */
+.navbar-intraive {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar-intraive .navbar-toggler {
+    border-color: #E5E5E5;
+    background-color: transparent;
+}
+
+.navbar-intraive .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-intraive .navbar-collapse {
+    background-color: #EA1D2C;
+}
+
+.navbar-intraive .nav-link {
+    color: #E5E5E5 !important;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.navbar-intraive .nav-link:hover {
+    opacity: 0.8;
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CARD DE LOGIN */
+.login-card {
+    background-color: #EA1D2C;
+    color: #E5E5E5;
+    border-radius: 12px;
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-card h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.login-card h2 img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.login-sub {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.campo input {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: #E5E5E5;
+    color: #565658;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.campo input:focus {
+    box-shadow: 0 0 0 3px rgba(229, 229, 229, 0.4);
+}
+
+.campo input::placeholder {
+    color: #aaa;
+}
+
+.esqueci {
+    font-size: 13px;
+    color: #E5E5E5;
+    text-align: right;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    margin-top: -8px;
+}
+
+.esqueci:hover {
+    opacity: 1;
+}
+
+.btn-login {
+    margin-top: 5px;
+    padding: 12px;
+    background-color: #E5E5E5;
+    color: #EA1D2C;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-login:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.cadastro {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    opacity: 0.85;
+}
+
+.cadastro a {
+    color: #E5E5E5;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+    transition: opacity 0.2s;
+}
+
+.cadastro a:hover {
+    opacity: 0.75;
+}
+
+/* DIVISOR */
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0 15px;
+    color: rgba(229, 229, 229, 0.7);
+    font-size: 13px;
+}
+
+.divisor::before,
+.divisor::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: rgba(229, 229, 229, 0.3);
+}
+
+/* SOCIAL LOGIN */
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #565658;
+    background-color: #E5E5E5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-social:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-facebook {
+    background-color: #1877F2;
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    background-color: #EA1D2C;
+    border-top: 2px solid #E5E5E5;
+    text-align: center;
+    padding: 20px;
+    color: #E5E5E5;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* REDES */
+.redes {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.redes a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.redes img {
+    margin: 5px;
+}
+
+/* CONTATO */
+.contato a img {
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.contato a img:hover {
+    transform: scale(1.05);
+}
+
+.contato {
+    background-color: #EA1D2C;
+    color: #E5E5E5;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contato p {
+    width: 48%;
+    padding: 0 10px;
+}
+
+.contato p:first-child {
+    text-align: left;
+}
+
+.contato p:last-child {
+    text-align: right;
+    font-size: 14px;
+}
+
+@media (max-width: 1023px) {
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato p {
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-card h2 {
+        font-size: 24px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .redes img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .login-card {
+        padding: 25px 15px;
+    }
+
+    .login-card h2 {
+        font-size: 20px;
+    }
+
+    .btn-login {
+        font-size: 14px;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+    .redes img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.btn-x {
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saborify - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html"><h1>SABORIFY</h1></a>
+
+    <nav class="menu d-none d-lg-flex">
+        <ul>
+            <li><a href="doces.html"><img src="img/meal.png" alt="Doces"></a></li>
+            <li><a href="salgados.html"><img src="img/rice-bowl.png" alt="Salgados"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Navbar mobile/tablet -->
+    <nav class="navbar navbar-expand-lg navbar-intraive d-lg-none">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLogin" aria-controls="navbarLogin" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarLogin">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doces.html">Doces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="salgados.html">Salgados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="login-card">
+        <h2> <img src="img/chef.png" alt="logo">Entrar</h2>
+        <p class="login-sub">Acesse sua conta Saborify</p>
+
+        <form class="login-form" action="#" method="post">
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="••••••••" required>
+            </div>
+
+            <a href="#" class="esqueci">Esqueci minha senha</a>
+
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+
+        <div class="divisor">
+            <span>ou continue com</span>
+        </div>
+
+        <div class="social-login">
+            <a href="#" class="btn-social btn-google">
+                <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google">
+                Google
+            </a>
+            <a href="#" class="btn-social btn-facebook">
+                <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+                Facebook
+            </a>
+            <a href="#" class="btn-social btn-x">
+                <img src="https://img.icons8.com/ios-filled/48/ffffff/twitterx.png" alt="X">
+                X
+            </a>
+        </div>
+
+        <p class="cadastro">Não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+</main>
+
+<footer>
+    <nav class="redes">
+        <a href="https://www.facebook.com/senaisaopaulo" target="_blank"><img src="img/Redes Sociais/face.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/accounts/login/?next=%2Fsenai.sp%2F&source=omni_redirect" target="_blank"><img src="img/Redes Sociais/instagram.png" alt="Instagram" /></a>
+        <a href="https://www.youtube.com/channel/UCaz1BMUVug86pd_uS598X1A" target="_blank"><img src="img/Redes Sociais/youtube.png" alt="YouTube" /></a>
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsenaisaopaulo" target="_blank"><img src="img/Redes Sociais/twitter.png" alt="Twitter" /></a>
+        <a href="https://br.linkedin.com/school/senaisp/" target="_blank"><img src="img/Redes Sociais/linkedin.png" alt="Linkedin" /></a>
+        <a href="https://api.whatsapp.com/send?phone=551133220050" target="_blank"><img src="img/Redes Sociais/whatsapp.png" alt="WhatsApp" /></a>
+    </nav>
+    <section class="contato">
+        <p class="titulo2">
+            <span class="titulo">SENAI Tatuapé - "Frederico Jacob"</span> <br>
+            rua São Jorge, 634 - Tatuapé - São Paulo/SP | CEP 03087-000
+        </p>
+        <p class="titulo">
+            <span class="titulos">CENTRAL DE RELACIONAMENTO:</span> <br>
+            (11) 2227-8020 (Telefone/WhatsApp) <br>
+            senaimanutencao@sp.senai.br
+        </p>
+    </section>
+    <section class="direitos">
+        <p>Copyright 2025 © Todos os direitos reservados.</p>
+        <p>Web-design Front-end</p>
+        <h2>Saborify ™</h2>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

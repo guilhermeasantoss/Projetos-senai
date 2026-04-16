@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color:  #565658;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2{
+    text-align: center;
+}
+
+/* MENU */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #EA1D2C;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.header h1 {
+    font-size: 70px;
+    color: #E5E5E5;
+}
+
+.header a{
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.header a:hover{
+    transform: scale(1.1);
+}
+
+/* MENU ICONES */
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu img {
+    height: 70px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+}
+
+/* NAVBAR MOBILE */
+.navbar-intraive {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navbar-intraive .navbar-toggler {
+    border-color: #E5E5E5;
+    background-color: transparent;
+}
+
+.navbar-intraive .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-intraive .navbar-collapse {
+    background-color: #EA1D2C;
+}
+
+.navbar-intraive .nav-link {
+    color: #E5E5E5 !important;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.navbar-intraive .nav-link:hover {
+    opacity: 0.8;
+}
+
+/* MAIN */
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    flex: 1;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+/* CONTAINERS */
+.container,
+.container2{
+    width: 85%;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #EA1D2C;
+    color: #E5E5E5;
+}
+
+.container > p{
+    font-size: 20px;
+}
+
+.container2 > p{
+    font-size: 22px;
+}
+
+.container > h2,
+.container2 > h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* CURSOS */
+.cursos-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.curso {
+    background-color: #E5E5E5;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.curso img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.curso a {
+    display: block;
+    margin-top: 15px;
+    background-color: #EA1D2C;
+    color: #E5E5E5;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.curso a:hover {
+    transform: scale(1.05);
+}
+
+/* OPÇÕES */
+.opcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.opcoes a{
+    width: 250px;
+    text-align: center;
+    background-color: #E5E5E5;
+    color: #EA1D2C;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.opcoes a:hover{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #EA1D2C;
+    border-top: 2px solid #E5E5E5;
+    text-align: center;
+    padding: 20px;
+    color: #E5E5E5;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* REDES */
+.redes{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.redes a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.redes img{
+    margin: 5px;
+}
+
+/* CONTATO */
+.contato a img {
+    width: 70px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.contato a img:hover {
+    transform: scale(1.05);
+}
+
+.contato {
+    background-color: #EA1D2C;
+    color: #E5E5E5;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contato p {
+    width: 48%;
+    padding: 0 10px;
+}
+
+.contato p:first-child {
+    text-align: left;
+}
+
+.contato p:last-child {
+    text-align: right;
+    font-size: 14px;
+}
+
+@media (max-width: 1023px) {
+    .contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contato p {
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
+/* INGREDIENTES GRID */
+.ingredientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.ingrediente {
+    background-color: #E5E5E5;
+    color: #333;
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ingrediente:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.ingrediente img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.ingrediente span {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* =============================================
+   RESPONSIVIDADE
+   - Mobile pequeno:  < 480px
+   - Mobile:          480px - 767px
+   - Tablet:          768px - 1023px
+   - Desktop:         1024px - 1439px
+   - Wide:            >= 1440px
+   ============================================= */
+
+/* WIDE - Telas grandes (TV, monitores ultrawide) */
+@media (min-width: 1440px) {
+    main {
+        max-width: 1200px;
+    }
+
+    .container,
+    .container2 {
+        width: 75%;
+    }
+
+    .ingredientes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
+/* DESKTOP padrão (1024px - 1439px) — já coberto pelo CSS base */
+
+/* TABLET (768px - 1023px) */
+@media (max-width: 1023px) {
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .container,
+    .container2 {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .container > h2,
+    .container2 > h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cursos-container {
+        gap: 20px;
+    }
+
+    .curso {
+        width: 260px;
+    }
+}
+
+/* MOBILE (480px - 767px) */
+@media (max-width: 767px) {
+    main {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .container,
+    .container2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container > h2,
+    .container2 > h2 {
+        font-size: 22px;
+    }
+
+    p, .container > p, .container2 > p {
+        font-size: 15px;
+    }
+
+    ol, ul {
+        padding-left: 18px;
+    }
+
+    ol li, ul li {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .ingredientes-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 10px;
+    }
+
+    .ingrediente img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ingrediente span {
+        font-size: 12px;
+    }
+
+    .cursos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .curso {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .opcoes {
+        margin-top: 30px;
+    }
+
+    .opcoes a {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .redes img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+/* MOBILE PEQUENO (< 480px) */
+@media (max-width: 479px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .container > h2,
+    .container2 > h2 {
+        font-size: 19px;
+    }
+
+    p, .container > p, .container2 > p {
+        font-size: 14px;
+    }
+
+    .ingredientes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .ingrediente {
+        padding: 10px 8px;
+    }
+
+    .ingrediente img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .ingrediente span {
+        font-size: 11px;
+    }
+
+    .opcoes a {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    .redes img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* SEÇÕES INGREDIENTES / PREPARO */
+.secao-ingredientes,
+.secao-preparo {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(229, 229, 229, 0.3);
+}
+
+.secao-titulo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.secao-preparo ol {
+    padding-left: 20px;
+}
+
+.secao-preparo ol li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.info-receita {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.85;
+    border-top: 1px solid rgba(229, 229, 229, 0.3);
+    padding-top: 12px;
+}
+
+/* RESPONSIVIDADE - SEÇÕES */
+@media (max-width: 1023px) {
+    .secao-titulo {
+        font-size: 18px;
+    }
+
+    .secao-preparo ol li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .secao-ingredientes,
+    .secao-preparo {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    .secao-titulo {
+        font-size: 17px;
+    }
+
+    .secao-preparo ol li {
+        font-size: 14px;
+    }
+
+    .info-receita {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 479px) {
+    .secao-titulo {
+        font-size: 15px;
+    }
+
+    .secao-preparo ol li {
+        font-size: 13px;
+    }
+
+    .info-receita {
+        font-size: 12px;
+    }
+}
+
+/* INDEX - SEÇÕES */
+.sobre, .missao, .visao, .valores {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.sobre h2, .missao h2, .visao h2, .valores h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #EA1D2C;
+}
+
+.sobre p, .missao p, .visao p {
+    font-size: 20px;
+    color: #565658;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.valores ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.valores ul li {
+    font-size: 20px;
+    color: #565658;
+    line-height: 1.8;
+    margin-bottom: 6px;
+}
+
+.divisoria {
+    width: 85%;
+    margin: 10px auto;
+    border: none;
+    border-top: 1px solid rgba(234, 29, 44, 0.25);
+}
+
+/* RESPONSIVIDADE - INDEX */
+@media (max-width: 767px) {
+    .sobre, .missao, .visao, .valores {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .divisoria {
+        width: 100%;
+    }
+
+    .sobre h2, .missao h2, .visao h2, .valores h2 {
+        font-size: 22px;
+    }
+
+    .sobre p, .missao p, .visao p, .valores ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 479px) {
+    .sobre h2, .missao h2, .visao h2, .valores h2 {
+        font-size: 19px;
+    }
+
+    .sobre p, .missao p, .visao p, .valores ul li {
+        font-size: 13px;
+    }
+}
+
+/* CARROSSEL */
+.carousel {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(0);
+    background-color: rgba(234, 29, 44, 0.7);
+    border-radius: 50%;
+    padding: 18px;
+}
+
+@media (max-width: 767px) {
+    .carousel,
+    .carousel-item img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 479px) {
+    .carousel,
+    .carousel-item img {
+        max-height: 180px;
+    }
+}

@@ -1,0 +1,189 @@
+/* ── FORMULÁRIO ── */
+.form-section {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 750px;
+}
+
+.form-desc {
+    text-align: center;
+    color: #565658;
+    margin-bottom: 30px;
+}
+
+.form-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ── FIELDSET ── */
+fieldset {
+    border: 2px solid #5B04B7;
+    border-radius: 12px;
+    padding: 20px 25px;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5B04B7;
+    padding: 0 10px;
+}
+
+/* ── GRUPOS ── */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #565658;
+}
+
+label span {
+    color: #5B04B7;
+}
+
+/* ── INPUTS ── */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #565658;
+    background-color: #fff;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #5B04B7;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ── RADIO E CHECKBOX ── */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 4px;
+}
+
+.radio-label,
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #5B04B7;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* ── RANGE ── */
+input[type="range"] {
+    width: 100%;
+    accent-color: #5B04B7;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* ── BOTÕES ── */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.btn-submit,
+.btn-reset {
+    padding: 12px 40px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-submit {
+    background-color: #5B04B7;
+    color: #E5E5E5;
+}
+
+.btn-reset {
+    background-color: #E5E5E5;
+    color: #5B04B7;
+    border: 2px solid #5B04B7;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ── RESPONSIVIDADE ── */
+@media (max-width: 600px) {
+    fieldset {
+        padding: 15px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-submit,
+    .btn-reset {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,172 @@
+/* ========================
+   GRID DE RANKING
+======================== */
+.ranking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+/* ========================
+   CARD COM IMAGEM
+======================== */
+.ranking-card-img {
+  background-color: #f8f9ff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #e0e8ff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ranking-card-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,53,128,0.15);
+}
+
+.ranking-card-img.ouro  { border-color: #FFD700; }
+.ranking-card-img.prata { border-color: #b0b8c8; }
+.ranking-card-img.bronze{ border-color: #cd7f32; }
+
+/* MEDALHA */
+.ranking-medal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #003580;
+  color: #FFD700;
+  font-size: 14px;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.ranking-card-img.ouro  .ranking-medal { background-color: #FFD700; color: #003580; }
+.ranking-card-img.prata .ranking-medal { background-color: #8a9ab0; color: #fff; }
+.ranking-card-img.bronze .ranking-medal { background-color: #cd7f32; color: #fff; }
+
+/* IMAGEM */
+.ranking-card-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  background-color: #d0d8f0;
+}
+
+/* INFO */
+.ranking-info {
+  padding: 15px 18px;
+  border-top: 3px solid #0050c8;
+  flex: 1;
+}
+
+.ranking-card-img.ouro   .ranking-info { border-top-color: #FFD700; }
+.ranking-card-img.prata  .ranking-info { border-top-color: #b0b8c8; }
+.ranking-card-img.bronze .ranking-info { border-top-color: #cd7f32; }
+
+.ranking-info h3 {
+  font-size: 17px;
+  color: #003580;
+  margin-bottom: 6px;
+}
+
+.ranking-info .pais {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.ranking-info ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.ranking-info ul li {
+  font-size: 13px;
+  color: #444;
+  padding: 4px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.ranking-info ul li:last-child {
+  border-bottom: none;
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  background-color: #0050c8;
+  color: #FFD700;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.badge.gol { background-color: #003580; }
+
+.ranking-card-img.ouro   .badge { background-color: #FFD700; color: #003580; }
+.ranking-card-img.prata  .badge { background-color: #8a9ab0; color: #fff; }
+.ranking-card-img.bronze .badge { background-color: #cd7f32; color: #fff; }
+
+/* AVISO */
+.aviso {
+  background-color: #fff8e1;
+  border-left: 5px solid #FFD700;
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ========================
+   RESPONSIVIDADE
+======================== */
+
+/* Tablet grande */
+@media (max-width: 1024px) {
+  .ranking-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .ranking-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .header-logo { margin-right: 0 !important; }
+}
+
+@media (max-width: 480px) {
+  .ranking-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .ranking-card-img img { height: 140px; }
+  .ranking-info h3 { font-size: 14px; }
+  .ranking-info .pais { font-size: 12px; }
+  .badge { font-size: 11px; }
+}
+
+@media (max-width: 360px) {
+  .ranking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header-logo { height: 60px; width: auto; margin-right: -1100px; }
