@@ -149,7 +149,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  .header-logo { margin-right: 0 !important; }
 }
 
 @media (max-width: 480px) {
@@ -169,4 +168,23 @@
   }
 }
 
-.header-logo { height: 60px; width: auto; margin-right: -1100px; }
+/* HEADER LAYOUT */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo {
+  height: 60px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.header h1 {
+  flex: 1;
+}
+
+.header .menu {
+  margin-left: auto;
+}

@@ -29,17 +29,20 @@ h2 {
   padding: 20px 40px;
   background: linear-gradient(135deg, #003580 0%, #0050c8 100%);
   border-bottom: 2px solid #FFD700;
+  gap: 30px;
 }
 
 .header-logo {
   height: 60px;
-  width: auto; 
-  margin-right: -1100px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .header h1 {
   font-size: 70px;
   color: #FFD700;
+  flex: 1;
+  text-align: left;
 }
 
 .header a {
@@ -72,7 +75,6 @@ h2 {
 /* RESPONSIVIDADE HEADER */
 @media (max-width: 1024px) {
   .header h1 { font-size: 52px; }
-  .header-logo { margin-right: -200px !important; }
 }
 
 @media (max-width: 768px) {
@@ -83,8 +85,8 @@ h2 {
     gap: 12px;
     text-align: center;
   }
-  .header h1 { font-size: 45px; }
-  .header-logo { margin-right: 0 !important; }
+  .header h1 { font-size: 45px; text-align: center; }
+  .header-logo { height: 60px; }
   .menu ul { gap: 12px; justify-content: center; flex-wrap: wrap; }
   .menu img { height: 50px; }
 }

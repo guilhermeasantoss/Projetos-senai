@@ -2,12 +2,6 @@
    BANNER DE SEDES
 ======================== */
 
-.header-logo {
-  height: 60px;
-  width: auto;
-  margin-right: -1100px;
-}
-
 .sedes-banner {
   background: linear-gradient(135deg, #003580, #0050c8);
   color: #FFD700;
@@ -204,7 +198,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
-  .header-logo { margin-right: 0 !important; }
 }
 
 @media (max-width: 480px) {

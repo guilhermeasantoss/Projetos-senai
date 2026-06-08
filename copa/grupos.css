@@ -2,12 +2,6 @@
    GRID DE GRUPOS
 ======================== */
 
-.header-logo {
-  height: 60px;
-  width: auto;
-  margin-right: -1100px;
-}
-
 .grupos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -91,7 +85,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  .header-logo { margin-right: 0 !important; }
 }
 
 @media (max-width: 480px) {
@@ -114,8 +107,6 @@
     grid-template-columns: 1fr;
   }
 }
-
-.header-logo { height: 60px; width: auto; margin-right: -340px; }
 
 .grupo-card ul li img {
   height: 20px;
